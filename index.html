@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEYSTONE | Private Realty Advisors</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@500;600;700&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pearl: '#F8F6F2',
+            stone: '#EDEAE2',
+            stoneDark: '#DCD6C8',
+            obsidian: '#0B121E',
+            navy: '#121E31',
+            bronze: '#B69354',
+            bronzeLight: '#D0B27A',
+            bronzeSoft: '#F5EFE4',
+            slateText: '#525D6F'
+          },
+          fontFamily: {
+            arabic: ['"Readex Pro"', 'sans-serif'],
+            heading: ['"Cairo"', 'sans-serif'],
+            brand: ['"Cinzel"', 'serif'],
+            num: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'luxury': '0 20px 45px -15px rgba(11, 18, 30, 0.12)',
+            'card': '0 8px 20px -6px rgba(11, 18, 30, 0.06)',
+            'gold': '0 8px 20px -4px rgba(182, 147, 84, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Readex Pro', sans-serif;
+      background-color: #F8F6F2;
+      color: #0B121E;
+    }
+    .arabic-headline {
+      font-family: 'Cairo', sans-serif;
+      word-spacing: 5px;
+      letter-spacing: 0px;
+      line-height: 1.65;
+    }
+    .num-font {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      direction: ltr;
+      display: inline-block;
+    }
+    .arch-pattern {
+      background-image: radial-gradient(rgba(182, 147, 84, 0.14) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    input[type=range] {
+      -webkit-appearance: none;
+      background: #DCD6C8;
+      height: 5px;
+      border-radius: 999px;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #0B121E;
+      border: 2.5px solid #B69354;
+      cursor: pointer;
+    }
+    .option-card {
+      transition: all 0.2s ease;
+    }
+    body { overflow-x: hidden; }
+    section[id] { scroll-margin-top: 120px; }
+    @media (min-width: 640px) { section[id] { scroll-margin-top: 84px; } }
+    .option-card:hover {
+      border-color: #B69354;
+      background-color: #F5EFE4;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-bronze selection:text-white">
+
+  <!-- Compact Top Market Pulse Bar -->
+  <div class="bg-obsidian text-white/90 text-[11px] sm:text-xs py-2 px-3 border-b border-bronze/20">
+    <div class="max-w-7xl mx-auto flex justify-center sm:justify-between items-center gap-2">
+      <div class="flex items-center gap-2 leading-snug">
+        <span class="w-1.5 h-1.5 rounded-full bg-bronze animate-pulse"></span>
+        <span class="text-bronzeLight font-medium">مؤشر Nawy 2026:</span>
+        <span>مقدم يبدأ من <b class="num-font text-white">5%</b> وتقسيط حتى <b class="num-font text-white">10</b> سنوات</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-[11px] text-gray-300">
+        <span>القاهرة الجديدة: نمو <b class="num-font text-bronzeLight">+32%</b></span>
+        <span>رأس الحكمة: عائد دولاري <b class="num-font text-bronzeLight">12%</b></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compact Navigation Header -->
+  <header class="sticky top-0 z-40 bg-obsidian/95 backdrop-blur-md border-b border-bronze/25 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3">
+
+      <a href="#" class="flex items-center gap-3 sm:gap-4 shrink-0">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded bg-navy/90 border border-bronze/50 flex items-center justify-center">
+          <svg viewBox="0 0 120 120" class="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 102V56C24 37.5 36.5 23 53 20.5" stroke="#B69354" stroke-width="4" stroke-linecap="round"/>
+            <path d="M96 102V56C96 37.5 83.5 23 67 20.5" stroke="#B69354" stroke-width="4" stroke-linecap="round"/>
+            <path d="M34 102V56C34 42.5 42.5 32 54 29.5" stroke="#B69354" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M86 102V56C86 42.5 77.5 32 66 29.5" stroke="#B69354" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M20 102H38M82 102H100" stroke="#B69354" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M51 10H69L65 29H55L51 10Z" fill="#D0B27A" stroke="#0B121E" stroke-width="1.5"/>
+            <text x="60" y="92" text-anchor="middle" fill="#FFFFFF" font-family="'Cinzel', serif" font-weight="700" font-size="54">K</text>
+          </svg>
+        </div>
+
+        <div class="text-left min-w-0" dir="ltr">
+          <span class="font-brand text-lg sm:text-xl font-bold tracking-[0.16em] text-white block leading-none">KEYSTONE</span>
+          <span class="text-[8px] sm:text-[10px] tracking-[0.1em] sm:tracking-[0.16em] uppercase text-bronzeLight font-semibold block mt-1.5 whitespace-nowrap max-[359px]:hidden">Private Realty Advisors</span>
+        </div>
+      </a>
+
+      <nav class="flex items-center gap-6 text-xs font-medium text-gray-300">
+        <a href="#projects-catalog" class="hidden sm:inline hover:text-bronzeLight transition">المشاريع</a>
+        <a href="#calculator" class="hidden sm:inline hover:text-bronzeLight transition">حاسبة الأقساط</a>
+        <a href="#quiz-funnel" class="bg-bronze hover:bg-bronzeLight text-obsidian text-[11px] sm:text-xs font-bold px-3.5 sm:px-4 py-2.5 whitespace-nowrap transition shadow-gold">
+          استشارة مجانية <span class="hidden sm:inline">←</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Mobile-only quick links -->
+    <div class="sm:hidden border-t border-bronze/15 flex justify-center gap-10 py-2 text-xs font-medium text-gray-300">
+      <a href="#projects-catalog" class="px-2 py-0.5 hover:text-bronzeLight">المشاريع</a>
+      <a href="#calculator" class="px-2 py-0.5 hover:text-bronzeLight">حاسبة الأقساط</a>
+    </div>
+  </header>
+
+  <!-- Compact Hero Section + Dynamic 4-Step Funnel -->
+  <section id="quiz-funnel" class="relative py-8 sm:py-14 overflow-hidden border-b border-stoneDark arch-pattern">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
+        
+        <!-- Right Column: Compact Editorial Pitch -->
+        <div class="lg:col-span-5 space-y-4 sm:space-y-6">
+          
+          <div class="inline-flex items-center gap-2 bg-obsidian text-white px-3 py-1.5 text-[10px] sm:text-xs border border-bronze/40">
+            <span class="text-bronzeLight">✦</span>
+            <span>قاعدة بيانات موثقة لأكثر من <b class="num-font text-bronzeLight">500+</b> مشروع عقاري</span>
+          </div>
+
+          <div class="space-y-2.5 sm:space-y-4">
+            <h1 class="arabic-headline text-[26px] sm:text-4xl font-extrabold text-obsidian">
+              قرارك العقاري مبني على أرقام دقيقة
+            </h1>
+
+            <div class="w-14 h-[2.5px] bg-bronze"></div>
+
+            <div class="bg-bronzeSoft/95 border-r-4 border-bronze p-2.5 sm:p-3.5 shadow-sm">
+              <p class="arabic-headline text-sm sm:text-base font-bold text-obsidian">
+                تعاقد بسعر المطور الرسمي مباشرة — <span class="text-bronze">وبدون أي عمولات إضافية.</span>
+              </p>
+            </div>
+          </div>
+
+          <p class="text-slateText text-sm leading-relaxed">
+            نظام المطابقة الفوري يفرز لك أحدث طروحات كبار المطورين (إعمار، ماونتن فيو، بالم هيلز، سوديك، تطوير مصر) وفقاً لميزانيتك.
+          </p>
+
+          <!-- 3 Columns Always Side-by-Side (Mobile & Desktop) -->
+          <div class="grid grid-cols-3 gap-2 sm:gap-3 pt-1">
+            <div class="bg-white p-3 sm:p-3.5 border border-stoneDark text-center sm:text-right">
+              <span class="num-font text-xl sm:text-2xl font-bold text-obsidian block">0%</span>
+              <p class="text-[11px] sm:text-xs text-slateText mt-0.5 font-medium">عمولة على المشتري</p>
+            </div>
+            <div class="bg-white p-3 sm:p-3.5 border border-stoneDark text-center sm:text-right">
+              <span class="num-font text-xl sm:text-2xl font-bold text-obsidian block">+45</span>
+              <p class="text-[11px] sm:text-xs text-slateText mt-0.5 font-medium">مطور فئة أولى</p>
+            </div>
+            <div class="bg-obsidian p-3 sm:p-3.5 border border-bronze/40 text-white text-center sm:text-right">
+              <span class="num-font text-xl sm:text-2xl font-bold text-bronzeLight block">100%</span>
+              <p class="text-[11px] sm:text-xs text-gray-300 mt-0.5 font-medium">مراجعة للعقود</p>
+            </div>
+          </div>
+
+          <!-- Selected Project Indicator -->
+          <div id="selectedProjectBanner" class="hidden bg-obsidian text-white p-3 border-r-4 border-bronze">
+            <div class="flex justify-between items-center">
+              <div>
+                <span class="text-[10px] text-bronzeLight block">المشروع المحدد للاستعلام:</span>
+                <p id="selectedProjectText" class="font-bold text-xs mt-0.5"></p>
+              </div>
+              <button onclick="clearSelectedProject()" class="text-[10px] text-gray-400 hover:text-white underline">تغيير</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Left Column: Compact 2x2 Grid Quiz Funnel (Side-by-Side on Mobile too) -->
+        <div class="lg:col-span-7">
+          <div class="bg-white border-2 border-obsidian/10 shadow-luxury relative overflow-hidden">
+            <div class="h-1.5 w-full bg-gradient-to-l from-obsidian via-bronze to-obsidian"></div>
+
+            <div class="p-4 sm:p-8">
+              <!-- Progress Header -->
+              <div id="quizHeader" class="mb-4 sm:mb-6">
+                <div class="flex justify-between items-center text-[11px] sm:text-xs font-semibold text-slateText mb-2">
+                  <span id="stepIndicatorText" class="text-obsidian">الخطوة 1 من 4: تحديد الهدف الاستثماري</span>
+                  <span id="stepPercentage" class="num-font text-bronze font-bold bg-bronzeSoft px-2 py-0.5 border border-bronze/30">25%</span>
+                </div>
+                <div class="w-full h-1.5 bg-stone overflow-hidden">
+                  <div id="progressBar" class="h-full bg-obsidian transition-all duration-500" style="width: 25%"></div>
+                </div>
+              </div>
+
+              <!-- STEP 1: 2 Columns Side-by-Side on Mobile & Desktop -->
+              <div id="step1" class="space-y-3 sm:space-y-4">
+                <div>
+                  <h2 class="arabic-headline text-lg sm:text-xl font-bold text-obsidian">ما هو هدفك الأساسي من شراء الوحدة؟</h2>
+                  <p class="text-xs text-slateText mt-0.5">اختر الهدف لتخصيص الخطوات التالية تلقائياً:</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2.5 sm:gap-3.5 pt-1">
+                  <button onclick="selectGoal('residential', 'سكن عائلي راقي')" class="option-card text-right p-4 min-h-[112px] sm:min-h-0 border border-stoneDark bg-pearl flex flex-col justify-between gap-1">
+                    <span class="text-[10px] tracking-widest uppercase text-bronze font-bold mb-1">RESIDENTIAL</span>
+                    <span class="font-bold text-sm sm:text-base text-obsidian leading-snug">سكن عائلي راقي</span>
+                    <span class="text-[11px] sm:text-xs text-slateText mt-1 leading-snug">شقق، تاون هاوس، وفيلات بكمبوندات متكاملة</span>
+                  </button>
+
+                  <button onclick="selectGoal('commercial', 'استثمار وعائد إيجاري')" class="option-card text-right p-4 min-h-[112px] sm:min-h-0 border border-stoneDark bg-pearl flex flex-col justify-between gap-1">
+                    <span class="text-[10px] tracking-widest uppercase text-bronze font-bold mb-1">COMMERCIAL</span>
+                    <span class="font-bold text-sm sm:text-base text-obsidian leading-snug">استثمار وعائد إيجاري</span>
+                    <span class="text-[11px] sm:text-xs text-slateText mt-1 leading-snug">مكاتب إدارية، محلات، عيادات، وشقق فندقية</span>
+                  </button>
+
+                  <button onclick="selectGoal('coastal', 'مصيف واستجمام ساحلي')" class="option-card text-right p-4 min-h-[112px] sm:min-h-0 border border-stoneDark bg-pearl flex flex-col justify-between gap-1">
+                    <span class="text-[10px] tracking-widest uppercase text-bronze font-bold mb-1">COASTAL</span>
+                    <span class="font-bold text-sm sm:text-base text-obsidian leading-snug">مصيف واستثمار ساحلي</span>
+                    <span class="text-[11px] sm:text-xs text-slateText mt-1 leading-snug">شاليهات وفيلات برأس الحكمة، الساحل، والسخنة</span>
+                  </button>
+
+                  <button onclick="selectGoal('roi', 'حفظ قيمة الأموال (أعلى ROI)')" class="option-card text-right p-4 min-h-[112px] sm:min-h-0 border border-stoneDark bg-pearl flex flex-col justify-between gap-1">
+                    <span class="text-[10px] tracking-widest uppercase text-bronze font-bold mb-1">HIGH ROI</span>
+                    <span class="font-bold text-sm sm:text-base text-obsidian leading-snug">حفظ السيولة وإعادة البيع</span>
+                    <span class="text-[11px] sm:text-xs text-slateText mt-1 leading-snug">اقتناص طروحات أولى (Launch) بأسعار افتتاحية</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 2 -->
+              <div id="step2" class="hidden space-y-3 sm:space-y-4">
+                <div class="flex items-center justify-between">
+                  <h2 id="step2Title" class="arabic-headline text-lg sm:text-xl font-bold text-obsidian"></h2>
+                  <button onclick="goToStep(1)" class="text-xs text-slateText hover:text-obsidian font-semibold px-2 py-1 border border-stoneDark">→ السـابق</button>
+                </div>
+                <p id="step2Subtitle" class="text-xs text-slateText"></p>
+                <div id="step2Options" class="grid grid-cols-2 gap-2.5 sm:gap-3.5 pt-1"></div>
+              </div>
+
+              <!-- STEP 3 -->
+              <div id="step3" class="hidden space-y-3 sm:space-y-4">
+                <div class="flex items-center justify-between">
+                  <h2 id="step3Title" class="arabic-headline text-lg sm:text-xl font-bold text-obsidian"></h2>
+                  <button onclick="goToStep(2)" class="text-xs text-slateText hover:text-obsidian font-semibold px-2 py-1 border border-stoneDark">→ السـابق</button>
+                </div>
+                <p id="step3Subtitle" class="text-xs text-slateText"></p>
+                <div id="step3Options" class="grid grid-cols-2 gap-2.5 sm:gap-3.5 pt-1"></div>
+              </div>
+
+              <!-- STEP 4 -->
+              <div id="step4" class="hidden space-y-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] text-obsidian bg-bronzeSoft px-2.5 py-0.5 font-bold border border-bronze/40">✓ تم فرز المشاريع المطابقة</span>
+                    <h2 class="arabic-headline text-lg sm:text-xl font-bold text-obsidian mt-1.5">بيانات استلام البروشورات والأسعار</h2>
+                  </div>
+                  <button onclick="goToStep(3)" class="text-xs text-slateText hover:text-obsidian font-semibold px-2 py-1 border border-stoneDark">→ السـابق</button>
+                </div>
+
+                <form id="leadForm" onsubmit="submitLead(event)" class="space-y-3">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label class="block text-xs font-bold text-obsidian mb-1.5">الاسم بالكامل *</label>
+                      <input type="text" id="clientName" required placeholder="مثال: م. أحمد محمود" 
+                        class="w-full px-3 py-2.5 bg-pearl border border-stoneDark focus:border-obsidian focus:bg-white outline-none text-base sm:text-xs transition" />
+                    </div>
+
+                    <div>
+                      <label class="block text-xs font-bold text-obsidian mb-1.5">رقم الهاتف (واتساب) *</label>
+                      <div class="grid grid-cols-3 gap-1.5">
+                        <select id="countryCode" class="col-span-1 px-1.5 py-2.5 bg-pearl border border-stoneDark text-base sm:text-[11px] font-semibold outline-none">
+                          <option value="+20">🇪🇬 +20</option>
+                          <option value="+966">🇸🇦 +966</option>
+                          <option value="+971">🇦🇪 +971</option>
+                          <option value="+965">🇰🇼 +965</option>
+                          <option value="+974">🇶🇦 +974</option>
+                        </select>
+                        <input type="tel" id="clientPhone" required placeholder="10XXXXXXXX" 
+                          class="col-span-2 px-3 py-2.5 bg-pearl border border-stoneDark focus:border-obsidian focus:bg-white outline-none text-base sm:text-xs num-font text-right" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-2.5">
+                    <label class="flex items-center gap-1.5 p-2.5 border border-stoneDark bg-pearl cursor-pointer text-xs font-semibold">
+                      <input type="radio" name="residency" value="مقيم داخل مصر" checked class="accent-obsidian" />
+                      <span>مقيم داخل مصر</span>
+                    </label>
+                    <label class="flex items-center gap-1.5 p-2.5 border border-stoneDark bg-pearl cursor-pointer text-xs font-semibold">
+                      <input type="radio" name="residency" value="مغترب بالخارج (Zoom)" class="accent-obsidian" />
+                      <span>مقيم بالخارج (Zoom)</span>
+                    </label>
+                  </div>
+
+                  <button type="submit" class="w-full bg-obsidian hover:bg-navy text-white font-bold py-4 text-sm tracking-wide transition shadow-md flex items-center justify-center gap-2 border border-bronze/40">
+                    <span>إرسال الطلب واستلام العروض المخصصة</span>
+                    <span class="text-bronzeLight">←</span>
+                  </button>
+                </form>
+              </div>
+
+              <!-- STEP 5: Success + CIL Copy -->
+              <div id="stepSuccess" class="hidden space-y-4 py-1">
+                <div class="text-center space-y-1">
+                  <div class="w-10 h-10 bg-obsidian text-bronzeLight border border-bronze mx-auto flex items-center justify-center text-lg">✓</div>
+                  <h3 class="arabic-headline text-lg sm:text-xl font-bold text-obsidian">تم اعتماد طلب الاستشارة بنجاح</h3>
+                </div>
+
+                <div class="bg-pearl border-2 border-bronze/50 p-3 space-y-2">
+                  <div class="flex items-center justify-between border-b border-stoneDark pb-1.5">
+                    <span class="text-[11px] font-bold text-obsidian">بطاقة العميل (Nawy Partners CIL)</span>
+                    <button onclick="copyCILData()" id="copyBtn" class="text-[10px] bg-obsidian text-bronzeLight px-2.5 py-1 font-semibold">
+                      نسخ الداتا (Copy CIL)
+                    </button>
+                  </div>
+                  <pre id="cilSummaryBox" class="text-xs text-slateText whitespace-pre-wrap leading-relaxed font-arabic"></pre>
+                </div>
+
+                <div class="flex gap-2">
+                  <a id="whatsappDirectBtn" href="#" target="_blank" class="flex-1 bg-obsidian text-white text-center py-3 text-xs font-bold border border-bronze/40">
+                    فتح واتساب بالتفاصيل ←
+                  </a>
+                  <button onclick="resetFunnel()" class="px-4 py-3 border border-stoneDark text-xs font-semibold text-slateText">
+                    طلب جديد
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Curated Nawy Projects Catalog (3 Cards Per Row on Mobile & Desktop!) -->
+  <section id="projects-catalog" class="py-8 sm:py-16 max-w-7xl mx-auto px-3 sm:px-6">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-10 gap-3">
+      <div>
+        <span class="text-[10px] uppercase tracking-[0.2em] text-bronze font-bold block mb-1">CURATED PORTFOLIO 2026</span>
+        <h2 class="arabic-headline text-lg sm:text-2xl font-bold text-obsidian">أقوى المشاريع المعتمدة والأعلى طلباً</h2>
+      </div>
+
+      <!-- Compact Region Filter Tabs -->
+      <div class="flex flex-wrap gap-1.5">
+        <button onclick="filterProjects('all')" class="filter-tab text-xs font-semibold px-3 sm:px-3.5 py-2 bg-obsidian text-bronzeLight border border-bronze/40 transition" data-region="all">الكل (6)</button>
+        <button onclick="filterProjects('شرق القاهرة')" class="filter-tab text-xs font-semibold px-3 sm:px-3.5 py-2 bg-stone text-obsidian hover:bg-bronzeSoft transition" data-region="شرق القاهرة">القاهرة الجديدة</button>
+        <button onclick="filterProjects('غرب القاهرة')" class="filter-tab text-xs font-semibold px-3 sm:px-3.5 py-2 bg-stone text-obsidian hover:bg-bronzeSoft transition" data-region="غرب القاهرة">الشيخ زايد</button>
+        <button onclick="filterProjects('الساحل الشمالي')" class="filter-tab text-xs font-semibold px-3 sm:px-3.5 py-2 bg-stone text-obsidian hover:bg-bronzeSoft transition" data-region="الساحل الشمالي">رأس الحكمة</button>
+        <button onclick="filterProjects('العاصمة الإدارية')" class="filter-tab text-xs font-semibold px-3 sm:px-3.5 py-2 bg-stone text-obsidian hover:bg-bronzeSoft transition" data-region="العاصمة الإدارية">العاصمة</button>
+      </div>
+    </div>
+
+    <!-- 3-Column Grid on ALL Screens (grid-cols-3) -->
+    <div id="projectsGrid" class="grid grid-cols-3 gap-2 sm:gap-5 lg:gap-6"></div>
+  </section>
+
+  <!-- Compact 3-Column Advisory Methodology (Side-by-Side on Mobile too) -->
+  <section id="methodology" class="py-8 sm:py-14 bg-white border-t border-b border-stoneDark">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6">
+      <h2 class="arabic-headline text-lg sm:text-2xl font-bold text-obsidian text-center mb-5 sm:mb-8">لماذا يثق المستثمرون في منهجية KEYSTONE؟</h2>
+
+      <div class="grid grid-cols-3 gap-2 sm:gap-6">
+        <div class="p-2.5 sm:p-6 bg-pearl border border-stoneDark">
+          <span class="num-font text-lg sm:text-2xl font-bold text-bronze block mb-1">01</span>
+          <h3 class="arabic-headline text-[13px] sm:text-base font-bold text-obsidian mb-1">فلترة محايدة</h3>
+          <p class="text-[11px] sm:text-xs text-slateText leading-snug">مقارنة هندسية ومالية محايدة بين عشرات المطورين.</p>
+        </div>
+        <div class="p-2.5 sm:p-6 bg-pearl border border-stoneDark">
+          <span class="num-font text-lg sm:text-2xl font-bold text-bronze block mb-1">02</span>
+          <h3 class="arabic-headline text-[13px] sm:text-base font-bold text-obsidian mb-1">حساب العائد</h3>
+          <p class="text-[11px] sm:text-xs text-slateText leading-snug">تحليل القيمة الحالية للأقساط وأعلى عائد إيجاري.</p>
+        </div>
+        <div class="p-2.5 sm:p-6 bg-pearl border border-stoneDark">
+          <span class="num-font text-lg sm:text-2xl font-bold text-bronze block mb-1">03</span>
+          <h3 class="arabic-headline text-[13px] sm:text-base font-bold text-obsidian mb-1">بدون عمولة</h3>
+          <p class="text-[11px] sm:text-xs text-slateText leading-snug">تعاقد رسمي مباشر بسعر الطرح الأول للمطور.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compact Side-by-Side Calculator -->
+  <section id="calculator" class="py-8 sm:py-16 bg-stone/70 border-b border-stoneDark">
+    <div class="max-w-5xl mx-auto px-3 sm:px-6">
+      <div class="text-center mb-6 sm:mb-10">
+        <h2 class="arabic-headline text-lg sm:text-2xl font-bold text-obsidian">حاسبة الأقساط التفاعلية</h2>
+      </div>
+
+      <div class="bg-white border border-stoneDark shadow-card p-4 sm:p-8 grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-8 items-center">
+        <!-- Sliders -->
+        <div class="md:col-span-7 space-y-4 sm:space-y-6">
+          <div>
+            <div class="flex justify-between text-xs sm:text-sm mb-1.5">
+              <span class="font-bold text-obsidian">قيمة الوحدة التقريبية</span>
+              <span id="calcPriceLabel" class="num-font font-bold text-obsidian">6,000,000 EGP</span>
+            </div>
+            <input type="range" id="calcPrice" min="2500000" max="25000000" step="500000" value="6000000" oninput="updateCalculator()" class="w-full" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-4">
+            <div>
+              <div class="flex justify-between text-xs mb-1.5">
+                <span class="font-bold text-obsidian">المقدم</span>
+                <span id="calcDpLabel" class="num-font font-bold text-bronze">10%</span>
+              </div>
+              <input type="range" id="calcDp" min="0" max="30" step="5" value="10" oninput="updateCalculator()" class="w-full" />
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-1.5">
+                <span class="font-bold text-obsidian">سنوات السداد</span>
+                <span id="calcYearsLabel" class="num-font font-bold text-obsidian">8 سنوات</span>
+              </div>
+              <input type="range" id="calcYears" min="4" max="10" step="1" value="8" oninput="updateCalculator()" class="w-full" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Output Summary Box (3 Metrics Side-by-Side on Mobile) -->
+        <div class="md:col-span-5 bg-obsidian text-white p-4 sm:p-6 border-t-4 border-bronze">
+          <div class="grid grid-cols-3 md:grid-cols-1 gap-2 sm:gap-3 text-center md:text-right mb-4">
+            <div>
+              <span class="text-[11px] text-gray-400 block">المقدم المطلوب:</span>
+              <div id="outDownpayment" class="num-font text-sm sm:text-lg font-bold text-bronzeLight">600,000</div>
+            </div>
+            <div>
+              <span class="text-[11px] text-gray-400 block">القسط الشهري:</span>
+              <div id="outMonthly" class="num-font text-sm sm:text-xl font-bold text-white">56,250</div>
+            </div>
+            <div>
+              <span class="text-[11px] text-gray-400 block">الربع سنوي:</span>
+              <div id="outQuarterly" class="num-font text-sm sm:text-base font-semibold text-gray-300">168,750</div>
+            </div>
+          </div>
+
+          <button onclick="applyCalcToFunnel()" class="w-full bg-bronze hover:bg-bronzeLight text-obsidian font-bold py-3 text-sm transition">
+            اعرض المشاريع المطابقة لهذه الخطة ←
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Modal -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden bg-obsidian/80 backdrop-blur-sm flex items-center justify-center p-3">
+    <div class="bg-white border-2 border-bronze/40 max-w-md w-full max-h-[90vh] overflow-y-auto p-5 space-y-4 shadow-luxury relative">
+      <button onclick="closeProjectModal()" class="absolute top-3 left-3 text-slateText hover:text-obsidian text-xs font-bold px-2 py-1 border border-stoneDark">✕</button>
+      
+      <div>
+        <span id="modalCode" class="text-[10px] font-mono text-bronze bg-bronzeSoft px-2 py-0.5 border border-bronze/30"></span>
+        <h3 id="modalTitle" class="arabic-headline text-lg font-bold text-obsidian mt-1.5"></h3>
+        <p id="modalDev" class="text-xs text-bronze font-semibold"></p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2.5 bg-pearl p-3 border border-stoneDark text-[11px]">
+        <div>
+          <span class="text-slateText block">نظام السداد:</span>
+          <strong id="modalPlan" class="text-obsidian mt-0.5 block"></strong>
+        </div>
+        <div>
+          <span class="text-slateText block">الوحدات:</span>
+          <strong id="modalTypes" class="text-obsidian mt-0.5 block"></strong>
+        </div>
+        <div>
+          <span class="text-slateText block">بداية الأسعار:</span>
+          <strong id="modalPrice" class="text-bronze num-font mt-0.5 block"></strong>
+        </div>
+        <div>
+          <span class="text-slateText block">الاستلام:</span>
+          <strong id="modalDelivery" class="text-obsidian mt-0.5 block"></strong>
+        </div>
+      </div>
+
+      <p id="modalDesc" class="text-xs text-slateText leading-relaxed"></p>
+
+      <button id="modalSelectBtn" class="w-full bg-obsidian hover:bg-navy text-white py-3 text-xs font-bold transition border border-bronze/40">
+        طلب بروشور الـ PDF وأسعار المشروع ←
+      </button>
+    </div>
+  </div>
+
+  <!-- Quick Brochure Request Modal (name + phone only, no quiz) -->
+  <div id="quickModal" class="fixed inset-0 z-50 hidden bg-obsidian/80 backdrop-blur-sm flex items-center justify-center p-3" onclick="if(event.target===this)closeQuickRequest()">
+    <div class="bg-white border-2 border-bronze/40 max-w-md w-full max-h-[90vh] overflow-y-auto p-5 space-y-4 shadow-luxury relative">
+      <button onclick="closeQuickRequest()" aria-label="إغلاق" class="absolute top-3 left-3 text-slateText hover:text-obsidian text-xs font-bold px-2.5 py-1.5 border border-stoneDark">✕</button>
+
+      <div id="quickFormView" class="space-y-4">
+        <div class="pt-1">
+          <span class="text-[11px] text-bronze font-semibold block">طلب بروشور وأسعار</span>
+          <h3 id="quickProjectName" class="arabic-headline text-lg font-bold text-obsidian mt-1"></h3>
+          <p class="text-xs text-slateText mt-1">اكتب اسمك ورقمك بس، وهنبعتلك البروشور والأسعار على واتساب.</p>
+        </div>
+
+        <form onsubmit="submitQuickRequest(event)" class="space-y-3">
+          <div>
+            <label class="block text-xs font-bold text-obsidian mb-1.5">الاسم *</label>
+            <input type="text" id="quickName" required placeholder="مثال: أحمد محمود"
+              class="w-full px-3 py-3 bg-pearl border border-stoneDark focus:border-obsidian focus:bg-white outline-none text-base sm:text-sm transition" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-obsidian mb-1.5">رقم الواتساب *</label>
+            <div class="grid grid-cols-3 gap-2">
+              <select id="quickCode" class="col-span-1 px-1.5 py-3 bg-pearl border border-stoneDark text-base sm:text-sm font-semibold outline-none">
+                <option value="+20">🇪🇬 +20</option>
+                <option value="+966">🇸🇦 +966</option>
+                <option value="+971">🇦🇪 +971</option>
+                <option value="+965">🇰🇼 +965</option>
+                <option value="+974">🇶🇦 +974</option>
+              </select>
+              <input type="tel" id="quickPhone" required placeholder="10XXXXXXXX"
+                class="col-span-2 px-3 py-3 bg-pearl border border-stoneDark focus:border-obsidian focus:bg-white outline-none text-base sm:text-sm num-font text-right" />
+            </div>
+          </div>
+          <button type="submit" class="w-full bg-obsidian hover:bg-navy text-white font-bold py-3.5 text-sm transition border border-bronze/40">
+            ابعتلي البروشور والأسعار ←
+          </button>
+        </form>
+
+        <button onclick="quickToFunnel()" class="w-full text-xs text-slateText hover:text-obsidian underline">
+          عايز ترشيحات مخصصة لميزانيتك؟ جاوب على 3 أسئلة سريعة
+        </button>
+      </div>
+
+      <div id="quickSuccessView" class="hidden space-y-4 pt-2">
+        <div class="text-center space-y-1">
+          <div class="w-10 h-10 bg-obsidian text-bronzeLight border border-bronze mx-auto flex items-center justify-center text-lg">✓</div>
+          <h3 class="arabic-headline text-lg font-bold text-obsidian">تم تسجيل طلبك</h3>
+        </div>
+        <div class="bg-pearl border-2 border-bronze/50 p-3 space-y-2">
+          <div class="flex items-center justify-between border-b border-stoneDark pb-1.5">
+            <span class="text-xs font-bold text-obsidian">بيانات الطلب</span>
+            <button onclick="copyQuickData()" id="quickCopyBtn" class="text-[11px] bg-obsidian text-bronzeLight px-2.5 py-1.5 font-semibold">نسخ البيانات</button>
+          </div>
+          <pre id="quickSummaryBox" class="text-xs text-slateText whitespace-pre-wrap leading-relaxed font-arabic"></pre>
+        </div>
+        <a id="quickWhatsappBtn" href="#" target="_blank" class="block w-full bg-obsidian text-white text-center py-3.5 text-sm font-bold border border-bronze/40">
+          فتح واتساب بالتفاصيل ←
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compact Footer -->
+  <footer class="bg-obsidian text-gray-400 py-8 text-[11px] border-t border-bronze/30">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 flex flex-wrap justify-center sm:justify-between items-center gap-4 text-center sm:text-start">
+      <span class="font-brand text-sm font-bold tracking-[0.2em] text-white">KEYSTONE REALTY</span>
+      <p class="text-[10px] text-gray-400">جميع الأسعار استرشادية من قوائم المطورين الرسمية - بدون عمولات على المشتري.</p>
+      <div class="flex gap-4 text-[10px]">
+        <button onclick="alert('تلتزم KEYSTONE بالحفاظ التام على سرية بيانات العملاء.')" class="hover:text-bronzeLight underline">سياسة الخصوصية</button>
+        <button onclick="alert('جميع التعاقدات تتم مباشرة داخل مقرات شركات التطوير العقاري.')" class="hover:text-bronzeLight underline">الشروط والأحكام</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const funnelBranches = {
+      residential: {
+        step2Title: "ما هي المنطقة المفضلة للسكن؟",
+        step2Subtitle: "اختر النطاق الجغرافي:",
+        step2Options: [
+          { label: "القاهرة الجديدة (التجمع)", sub: "الجولدن سكوير وبيت الوطن" },
+          { label: "المستقبل ومدينتي", sub: "كمبوندات الجيل الرابع" },
+          { label: "الشيخ زايد وأكتوبر", sub: "الهدوء وفيلات الحزام الأخضر" },
+          { label: "العاصمة الإدارية (R7/R8)", sub: "أعلى قيمة وتقسيط طويل" }
+        ],
+        step3Title: "ما هي خطة المقدم الأنسب؟",
+        step3Subtitle: "اختر الشريحة المالية:",
+        step3Options: [
+          { label: "مقدم 250 - 500 ألف", sub: "تقسيط حتى 9 سنوات" },
+          { label: "مقدم 500 ألف - 1 مليون", sub: "شقق متميزة أو تاون هاوس" },
+          { label: "أكثر من 1.5 مليون", sub: "استلام فوري أو فيلات" },
+          { label: "كاش بخصم خاص", sub: "خصومات تصل إلى 35%" }
+        ]
+      },
+      commercial: {
+        step2Title: "ما هو نوع الوحدة الاستثمارية؟",
+        step2Subtitle: "اختر القطاع التجاري:",
+        step2Options: [
+          { label: "مكتب إداري متشطب", sub: "مطلوب للشركات الأجنبية" },
+          { label: "محل تجاري / مطعم", sub: "واجهات بمولات تشغيلية" },
+          { label: "عيادة طبية مرخصة", sub: "مجمعات طبية متكاملة" },
+          { label: "شقة فندقية بإدارة عالمية", sub: "عائد إيجاري دولاري" }
+        ],
+        step3Title: "ما هي ميزانية المقدم الاستثماري؟",
+        step3Subtitle: "اختر الشريحة المناسبة:",
+        step3Options: [
+          { label: "مقدم 400 - 800 ألف", sub: "مساحات ذكية بطرح أول" },
+          { label: "مقدم 800 ألف - 1.5 مليون", sub: "مواقع مميزة وإيجار إلزامي" },
+          { label: "أكثر من 2 مليون", sub: "استلام قريب أو موقع Prime" },
+          { label: "أعلى عائد على المقدم", sub: "ترشيح المستشار للأفضل" }
+        ]
+      },
+      coastal: {
+        step2Title: "ما هي وجهتك الساحلية؟",
+        step2Subtitle: "اختر المنطقة الساحلية:",
+        step2Options: [
+          { label: "رأس الحكمة", sub: "الوجهة الاستثمارية الأولى" },
+          { label: "سيدي حنيش والضبعة", sub: "أسعار طرح أولى مميزة" },
+          { label: "العين السخنة والجلالة", sub: "75 دقيقة من القاهرة" },
+          { label: "الجونة والبحر الأحمر", sub: "عائد دولاري طوال العام" }
+        ],
+        step3Title: "ما هو نظام السداد المفضل؟",
+        step3Subtitle: "اختر خطة الدفع:",
+        step3Options: [
+          { label: "مقدم 5% (350-600 ألف)", sub: "أطول سداد للطرح الجديد" },
+          { label: "مقدم 10% (600 ألف-1.2M)", sub: "شاليهات 2 أو 3 غرف" },
+          { label: "أكثر من 1.5 مليون", sub: "صفوف أولى أو تاون هاوس" },
+          { label: "استلام قريب للتأجير", sub: "قرى تعمل ومكتملة" }
+        ]
+      },
+      roi: {
+        step2Title: "ما هي استراتيجية الاستثمار؟",
+        step2Subtitle: "اختر آلية تعظيم رأس المال:",
+        step2Options: [
+          { label: "اقتناص طرح أول (Launch)", sub: "أول سعر للمتر وإعادة بيع" },
+          { label: "مقدم 0% أو 5% وأطول سداد", sub: "الاستفادة من التضخم" },
+          { label: "استلام فوري بالتقسيط", sub: "تأجير فوري يساهم بالقسط" },
+          { label: "صفقة كاش بخصم 30%", sub: "أقل من سعر السوق الفعلي" }
+        ],
+        step3Title: "ما هي السيولة الجاهزة حالياً؟",
+        step3Subtitle: "لتوجيهك لأقوى 3 فرص:",
+        step3Options: [
+          { label: "300 إلى 600 ألف جنيه", sub: "مناسبة لطروحات 5% مقدم" },
+          { label: "600 ألف إلى 1.2 مليون", sub: "فرص سكنية أو إدارية" },
+          { label: "1.2 إلى 3 مليون جنيه", sub: "محفظة قوية أو استلام قريب" },
+          { label: "أكثر من 3 مليون جنيه", sub: "فرص VIP وصفقات كاش" }
+        ]
+      }
+    };
+
+    const nawyProjects = [
+      {
+        code: "NAWY-MV-01",
+        name: "Mountain View iCity",
+        developer: "Mountain View",
+        region: "شرق القاهرة",
+        priceStart: "6.2M EGP",
+        plan: "5% مقدم - 8 سنوات",
+        types: "شقق، آي فيلا، تاون هاوس",
+        delivery: "2027 - 2028",
+        badge: "التجمع",
+        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
+        desc: "مجتمع عمراني ذكي على مساحة 500 فدان في قلب التجمع الخامس."
+      },
+      {
+        code: "NAWY-HP-02",
+        name: "Hyde Park",
+        developer: "Hyde Park Dev",
+        region: "شرق القاهرة",
+        priceStart: "5.8M EGP",
+        plan: "5% مقدم - 8 سنوات",
+        types: "شقق، دوبلكس، إداري",
+        delivery: "استلام قريب + جديد",
+        badge: "التسعين",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+        desc: "موقع مباشر على التسعين الجنوبي بأكبر بارك مركزي 141 فدان."
+      },
+      {
+        code: "NAWY-BD-03",
+        name: "Badya Palm Hills",
+        developer: "Palm Hills",
+        region: "غرب القاهرة",
+        priceStart: "5.1M EGP",
+        plan: "0% أو 5% - 10 سنوات",
+        types: "شقق متشطبة وفيلات",
+        delivery: "مراحل جاهزة + 2027",
+        badge: "10 سنوات",
+        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80",
+        desc: "المدينة الذكية الأولى في غرب القاهرة من بالم هيلز بأقوى خطة سداد."
+      },
+      {
+        code: "NAWY-SL-04",
+        name: "Salt Ras El Hekma",
+        developer: "Tatweer Misr",
+        region: "الساحل الشمالي",
+        priceStart: "7.4M EGP",
+        plan: "10% مقدم - 8 سنوات",
+        types: "شاليهات وفيلات لاجون",
+        delivery: "تشطيب كامل",
+        badge: "رأس الحكمة",
+        image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
+        desc: "الكيلو 185 برأس الحكمة برؤية بانورامية للبحر واللاجونز."
+      },
+      {
+        code: "NAWY-SO-05",
+        name: "Solare Coast",
+        developer: "Misr Italia",
+        region: "الساحل الشمالي",
+        priceStart: "6.9M EGP",
+        plan: "5% مقدم - 8 سنوات",
+        types: "شاليهات وتاون هاوس",
+        delivery: "تشطيب فندقي",
+        badge: "عائد دولاري",
+        image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80",
+        desc: "طابع إيطالي فاخر على شاطئ رأس الحكمة الكيلو 199."
+      },
+      {
+        code: "NAWY-IB-06",
+        name: "Il Bosco Capital",
+        developer: "Misr Italia",
+        region: "العاصمة الإدارية",
+        priceStart: "4.6M EGP",
+        plan: "5% مقدم - 9 سنوات",
+        types: "شقق، فيلات، مكاتب",
+        delivery: "استلام فوري + 2027",
+        badge: "العاصمة",
+        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80",
+        desc: "بجوار فندق الماسة والحي الدبلوماسي مباشرة في العاصمة الإدارية."
+      }
+    ];
+
+    let funnelState = {
+      goalKey: '',
+      goalLabel: '',
+      step2Choice: '',
+      step3Choice: '',
+      selectedProject: 'ترشيح عام لأفضل المشاريع المطابقة'
+    };
+
+    function selectGoal(key, label) {
+      funnelState.goalKey = key;
+      funnelState.goalLabel = label;
+
+      const branch = funnelBranches[key];
+      document.getElementById('step2Title').innerText = branch.step2Title;
+      document.getElementById('step2Subtitle').innerText = branch.step2Subtitle;
+
+      const step2Container = document.getElementById('step2Options');
+      step2Container.innerHTML = '';
+      branch.step2Options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'option-card text-right p-4 min-h-[112px] sm:min-h-0 border border-stoneDark bg-pearl flex flex-col justify-between gap-1';
+        btn.innerHTML = `
+          <span class="font-bold text-sm sm:text-base text-obsidian leading-snug">${opt.label}</span>
+          <span class="text-[11px] sm:text-xs text-slateText mt-1 leading-snug">${opt.sub}</span>
+        `;
+        btn.onclick = () => selectStep2(opt.label);
+        step2Container.appendChild(btn);
+      });
+
+      goToStep(2);
+    }
+
+    function selectStep2(choiceLabel) {
+      funnelState.step2Choice = choiceLabel;
+      const branch = funnelBranches[funnelState.goalKey];
+
+      document.getElementById('step3Title').innerText = branch.step3Title;
+      document.getElementById('step3Subtitle').innerText = branch.step3Subtitle;
+
+      const step3Container = document.getElementById('step3Options');
+      step3Container.innerHTML = '';
+      branch.step3Options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'option-card text-right p-4 min-h-[112px] sm:min-h-0 border border-stoneDark bg-pearl flex flex-col justify-between gap-1';
+        btn.innerHTML = `
+          <span class="font-bold text-sm sm:text-base text-obsidian leading-snug">${opt.label}</span>
+          <span class="text-[11px] sm:text-xs text-slateText mt-1 leading-snug">${opt.sub}</span>
+        `;
+        btn.onclick = () => selectStep3(opt.label);
+        step3Container.appendChild(btn);
+      });
+
+      goToStep(3);
+    }
+
+    function selectStep3(choiceLabel) {
+      funnelState.step3Choice = choiceLabel;
+      goToStep(4);
+    }
+
+    function goToStep(stepNum) {
+      ['step1', 'step2', 'step3', 'step4', 'stepSuccess'].forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+      });
+      document.getElementById('quizHeader').classList.remove('hidden');
+
+      const titles = {
+        1: 'الخطوة 1 من 4: تحديد الهدف الاستثماري',
+        2: 'الخطوة 2 من 4: تحديد التفضيل والمنطقة',
+        3: 'الخطوة 3 من 4: تحديد خطة السداد والمقدم',
+        4: 'الخطوة 4 من 4: بيانات استلام البروشورات'
+      };
+      const percents = { 1: 25, 2: 50, 3: 75, 4: 100 };
+
+      document.getElementById('step' + stepNum).classList.remove('hidden');
+      document.getElementById('stepIndicatorText').innerText = titles[stepNum];
+      document.getElementById('stepPercentage').innerText = percents[stepNum] + '%';
+      document.getElementById('progressBar').style.width = percents[stepNum] + '%';
+    }
+
+    function submitLead(e) {
+      e.preventDefault();
+      const name = document.getElementById('clientName').value.trim();
+      const code = document.getElementById('countryCode').value;
+      const phone = document.getElementById('clientPhone').value.trim();
+      const residency = document.querySelector('input[name="residency"]:checked').value;
+
+      const cilText = `الاسم: ${name}
+رقم الواتساب: ${code}${phone}
+محل الإقامة: ${residency}
+الهدف الأساسي: ${funnelState.goalLabel}
+التفضيل/المنطقة: ${funnelState.step2Choice}
+خطة المقدم: ${funnelState.step3Choice}
+المشروع المحدد: ${funnelState.selectedProject}`;
+
+      document.getElementById('cilSummaryBox').innerText = cilText;
+
+      const waMsg = encodeURIComponent(`مرحباً مستشار KEYSTONE، قمت بتسجيل طلبي على الموقع:\n\n${cilText}\n\nأرجو إرسال البروشورات المتاحة.`);
+      document.getElementById('whatsappDirectBtn').href = `https://wa.me/?text=${waMsg}`;
+
+      ['step1', 'step2', 'step3', 'step4', 'quizHeader'].forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+      });
+      document.getElementById('stepSuccess').classList.remove('hidden');
+    }
+
+    function copyCILData() {
+      const text = document.getElementById('cilSummaryBox').innerText;
+      navigator.clipboard.writeText(text);
+      const btn = document.getElementById('copyBtn');
+      btn.innerText = '✓ تم النسخ!';
+      setTimeout(() => { btn.innerText = 'نسخ الداتا (Copy CIL)'; }, 2500);
+    }
+
+    function resetFunnel() {
+      document.getElementById('leadForm').reset();
+      goToStep(1);
+    }
+
+    // Renders 3 Cards per Row on BOTH Mobile and Desktop
+    function renderProjects(regionFilter = 'all') {
+      const grid = document.getElementById('projectsGrid');
+      grid.innerHTML = '';
+
+      const filtered = regionFilter === 'all' 
+        ? nawyProjects 
+        : nawyProjects.filter(p => p.region === regionFilter);
+
+      filtered.forEach((p) => {
+        const card = document.createElement('div');
+        card.className = 'bg-white border border-stoneDark shadow-card hover:border-bronze transition flex flex-col justify-between overflow-hidden group';
+        card.innerHTML = `
+          <div>
+            <div class="relative h-28 sm:h-48 overflow-hidden bg-obsidian">
+              <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90" />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent"></div>
+              <span class="absolute top-1.5 right-1.5 text-[9px] sm:text-[11px] font-bold bg-obsidian/90 text-bronzeLight px-1.5 sm:px-2.5 py-0.5 border border-bronze/40">${p.badge}</span>
+            </div>
+            <div class="p-2 sm:p-5 pb-1 sm:pb-2">
+              <h3 class="text-[13px] sm:text-lg font-bold text-obsidian leading-snug">${p.name}</h3>
+              <p class="text-[11px] sm:text-xs text-bronze font-semibold truncate mt-0.5">${p.developer}</p>
+              <p class="hidden sm:block text-xs text-slateText mt-2 leading-relaxed">${p.desc}</p>
+            </div>
+          </div>
+
+          <div class="p-2 sm:p-5 pt-2 sm:pt-3 mt-1 border-t border-stone space-y-2 sm:space-y-2.5">
+            <div class="flex flex-col sm:flex-row sm:justify-between text-[11px] sm:text-xs">
+              <span class="text-slateText">السعر:</span>
+              <strong class="num-font text-obsidian text-[13px] sm:text-xs">${p.priceStart}</strong>
+            </div>
+            <div class="text-[10px] sm:text-xs text-obsidian bg-bronzeSoft px-1.5 py-1 font-semibold text-center leading-snug">
+              ${p.plan}
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2 pt-1">
+              <button onclick="openProjectModal('${p.code}')" class="py-2.5 sm:py-2 border border-obsidian text-obsidian hover:bg-pearl text-[12px] sm:text-xs font-bold transition">
+                التفاصيل
+              </button>
+              <button onclick="openQuickRequest('${p.name} (${p.code})')" class="py-2.5 sm:py-2 bg-obsidian hover:bg-navy text-bronzeLight text-[12px] sm:text-xs font-bold transition">
+                البروشور
+              </button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterProjects(region) {
+      document.querySelectorAll('.filter-tab').forEach(btn => {
+        if (btn.dataset.region === region) {
+          btn.className = 'filter-tab text-xs font-semibold px-3 sm:px-3.5 py-2 bg-obsidian text-bronzeLight border border-bronze/40 transition';
+        } else {
+          btn.className = 'filter-tab text-xs font-semibold px-3 sm:px-3.5 py-2 bg-stone text-obsidian hover:bg-bronzeSoft transition';
+        }
+      });
+      renderProjects(region);
+    }
+
+    function openProjectModal(code) {
+      const p = nawyProjects.find(item => item.code === code);
+      if (!p) return;
+      document.getElementById('modalCode').innerText = p.code + ' | ' + p.region;
+      document.getElementById('modalTitle').innerText = p.name;
+      document.getElementById('modalDev').innerText = 'المطور: ' + p.developer;
+      document.getElementById('modalPlan').innerText = p.plan;
+      document.getElementById('modalTypes').innerText = p.types;
+      document.getElementById('modalPrice').innerText = p.priceStart;
+      document.getElementById('modalDelivery').innerText = p.delivery;
+      document.getElementById('modalDesc').innerText = p.desc;
+
+      document.getElementById('modalSelectBtn').onclick = () => {
+        closeProjectModal();
+        openQuickRequest(`${p.name} (${p.code})`);
+      };
+
+      document.getElementById('projectModal').classList.remove('hidden');
+    }
+
+    function closeProjectModal() {
+      document.getElementById('projectModal').classList.add('hidden');
+    }
+
+    function selectProjectForFunnel(projectLabel) {
+      funnelState.selectedProject = projectLabel;
+      document.getElementById('selectedProjectText').innerText = projectLabel;
+      document.getElementById('selectedProjectBanner').classList.remove('hidden');
+      document.getElementById('quiz-funnel').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function clearSelectedProject() {
+      funnelState.selectedProject = 'ترشيح عام لأفضل المشاريع المطابقة';
+      document.getElementById('selectedProjectBanner').classList.add('hidden');
+    }
+
+    function updateCalculator() {
+      const price = parseInt(document.getElementById('calcPrice').value);
+      const dpPercent = parseInt(document.getElementById('calcDp').value);
+      const years = parseInt(document.getElementById('calcYears').value);
+
+      const dpAmount = Math.round(price * (dpPercent / 100));
+      const remaining = price - dpAmount;
+      const monthly = Math.round(remaining / (years * 12));
+      const quarterly = monthly * 3;
+
+      document.getElementById('calcPriceLabel').innerText = price.toLocaleString('en-US') + ' EGP';
+      document.getElementById('calcDpLabel').innerText = dpPercent + '%';
+      document.getElementById('calcYearsLabel').innerText = years + ' سنوات';
+
+      document.getElementById('outDownpayment').innerText = dpAmount.toLocaleString('en-US');
+      document.getElementById('outMonthly').innerText = monthly.toLocaleString('en-US');
+      document.getElementById('outQuarterly').innerText = quarterly.toLocaleString('en-US');
+    }
+
+    function applyCalcToFunnel() {
+      const price = parseInt(document.getElementById('calcPrice').value).toLocaleString('en-US');
+      const dp = document.getElementById('outDownpayment').innerText;
+      const years = document.getElementById('calcYears').value;
+      selectProjectForFunnel(`خطة مالية: سعر ~${price} ج | مقدم ${dp} | تقسيط ${years} سنوات`);
+    }
+
+    // Set the company WhatsApp number in international format, no "+" (e.g. '201000000000').
+    // Left empty, WhatsApp opens its contact picker.
+    const WHATSAPP_NUMBER = '';
+    let quickProject = '';
+
+    function openQuickRequest(projectLabel) {
+      quickProject = projectLabel;
+      document.getElementById('quickProjectName').innerText = projectLabel;
+      document.getElementById('quickFormView').classList.remove('hidden');
+      document.getElementById('quickSuccessView').classList.add('hidden');
+      document.getElementById('quickModal').classList.remove('hidden');
+    }
+
+    function closeQuickRequest() {
+      document.getElementById('quickModal').classList.add('hidden');
+    }
+
+    function quickToFunnel() {
+      closeQuickRequest();
+      selectProjectForFunnel(quickProject);
+    }
+
+    function submitQuickRequest(e) {
+      e.preventDefault();
+      const name = document.getElementById('quickName').value.trim();
+      const code = document.getElementById('quickCode').value;
+      const phone = document.getElementById('quickPhone').value.trim();
+
+      const cilText = `الاسم: ${name}\nرقم الواتساب: ${code}${phone}\nالمشروع المحدد: ${quickProject}\nنوع الطلب: بروشور وأسعار (طلب مباشر)`;
+      document.getElementById('quickSummaryBox').innerText = cilText;
+
+      const waMsg = encodeURIComponent(`مرحباً مستشار KEYSTONE، أرجو إرسال بروشور وأسعار المشروع التالي:\n\n${cilText}`);
+      document.getElementById('quickWhatsappBtn').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMsg}`;
+
+      document.getElementById('quickFormView').classList.add('hidden');
+      document.getElementById('quickSuccessView').classList.remove('hidden');
+    }
+
+    function copyQuickData() {
+      const text = document.getElementById('quickSummaryBox').innerText;
+      if (navigator.clipboard) navigator.clipboard.writeText(text);
+      const btn = document.getElementById('quickCopyBtn');
+      btn.innerText = '✓ تم النسخ!';
+      setTimeout(() => { btn.innerText = 'نسخ البيانات'; }, 2500);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { closeQuickRequest(); closeProjectModal(); }
+    });
+
+    renderProjects('all');
+    updateCalculator();
+  </script>
+</body>
+</html>
